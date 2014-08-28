@@ -1,0 +1,13 @@
+
+system("./soap_form.rb")
+watch( 'soap_form.rb' )  {|md|
+   system("./soap_form.rb")
+}
+
+watch( 'lib/(.*).rb' )  {|md|
+   system("./soap_form.rb")
+}
+
+watch( 'lib/*/(.*).rb' )  {|md|
+   system("./soap_form.rb")
+}
